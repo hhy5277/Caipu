@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- 引入YDUI样式 -->
+   <link rel="stylesheet" href="../css/ydui.css" />
+   <link rel="stylesheet" href="../css/clear.css">
+   <link rel="stylesheet" href="../css/info.css">
+   <!-- 引入YDUI自适应解决方案类库 -->
+   <script src="../js/ydui.flexible.js"></script>
+  <title>菜品详情</title>
+</head>
+<body>
+
+  <header class="m-navbar">
+    <a href="#" class="navbar-item">
+      <i class="cell-icon back-ico" onclick="javascript:history.back()"></i>
+      <i class="cell-icon icon-share2"></i>
+    </a>
+    <div class="navbar-center">
+        <span class="navbar-title">菜品详情</span>
+    </div>
+    <div class="navbar-item">
+        <a href="#">
+          <i class="cell-icon icon-star-outline"></i>
+        </a>
+    </div>
+  </header>
+
+  <div class="g-view">
+    <div class="info-top">
+      <div class="top-zhezhao"></div>
+    </div>
+    <div class="info-action">
+      <div class="info-title">
+        <h2>香辣豆豉鲫鱼</h2>
+        <p>以前我们介绍过【午餐肉】、【清蒸猪肉】等常见的罐头口味菜品的烹饪方法，今天我们再介绍一道常见的罐头食品【豆豉鲫鱼】的做法...</p>
+      </div>
+      <div class="info-list-item">
+        <h2>主料</h2>
+        <p>荷叶饼,6张;韭菜,200g;绿豆芽,200g;肉馅,200g</p>
+      </div>
+      <div class="info-list-item">
+        <h2>辅料</h2>
+        <p>盐,适量;水淀粉,适量</p>
+      </div>
+      <div class="info-step">
+        <div class="step-item">
+          <h2>香辣豆豉鲫鱼 步骤 1</h2>
+          <img src="https://s1.st.meishij.net/rs/86/218/4367086/n4367086_155840131772213.jpg" alt="">
+          <p>新鲜鲫鱼去鳞去鳃去肚腹，鱼身用刀刮洗干净，鱼肚内的血污和黑膜是鱼腥味最重的，一定要去除干净</p>
+        </div>
+        <div class="step-item">
+          <h2>香辣豆豉鲫鱼 步骤 2</h2>
+          <img src="https://s1.st.meishij.net/rs/86/218/4367086/n4367086_155840133039868.jpg" alt="">
+          <p>洗好的鲫鱼在鱼身两面轻划几刀，加入精盐、葱叶、姜片和黄酒，腌制一会儿</p>
+        </div>
+        <div class="step-item">
+          <h2>香辣豆豉鲫鱼 步骤 3</h2>
+          <img src="https://s1.st.meishij.net/rs/86/218/4367086/n4367086_155840133297213.jpg" alt="">
+          <p>热锅放油烧至六成热时下入鲫鱼炸至酥脆，注意火要小一点，油温不要太高，否则容易炸糊或者不容易炸透</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 引入jQuery 2.0+ -->
+  <script src="../js/jquery.js"></script>
+  <!-- 引入YDUI脚本 -->
+  <script src="../js/ydui.js"></script>
+  <script>
+    // jq 监听页面滚动
+    $(window).scroll(function(){
+      //获取当前滑动的位置
+      var scrollTop = $(window).scrollTop();
+      // 如果大于导航条 45px 时候添加 改变背景色的类名
+      if(scrollTop > 45){
+          $(".m-navbar").addClass("active");
+      }else{ // 否则移除
+          $(".m-navbar").removeClass("active");
+      }
+    })
+  </script>  
+</body>
+</html>    

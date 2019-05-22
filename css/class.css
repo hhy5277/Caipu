@@ -1,0 +1,67 @@
+body {
+  background: #fff !important;
+}
+.class-title{
+  margin-bottom: .42rem;
+}
+.class-title h2{
+  font-size: .64rem;
+  margin-bottom: .2rem;
+}
+.class-title p{
+  color: #8d8d8d;
+}
+.g-view {
+  padding: 0 .3rem;
+}
+.cell-item {
+  box-shadow: 0 0 .12rem #e8e8e8;
+}
+.class-caipu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.class-caipu ul li{
+  width: 30%;
+  margin-right: .3rem;
+  position: relative;
+  margin-bottom: .3rem;
+}
+.class-caipu ul li:nth-child(3n){
+  margin-right: 0;
+}
+.class-caipu ul li img{
+  width: 100%;
+}
+.class-caipu ul li div{
+  position: absolute;
+  width: 100%;
+  height: 2.07rem;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.28);
+}
+.class-caipu ul li p{
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.24rem;
+  margin-top: -0.18rem;
+}
+.caipu-title {
+  display: flex;
+  justify-content: space-between;
+  height: .68rem;
+  align-items: center;
+}
+
+.caipu-title h3{
+  font-size: .3rem;
+}
+
+.caipu-title span{
+  font-size: .24rem;
+  color: #8d8d8d
+}

@@ -1,0 +1,38 @@
+body {
+  background: #fff;
+}
+.view-main,.g-view {
+  height: 100%;
+}
+.view-main .view-left {
+  width: 25%;
+  height: 100%;
+  float: left;
+  border-right: .02rem solid #e8e8e8;
+  position: fixed;
+  top: .9rem;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.view-main .view-right {
+  width: 75%;
+  height: 100%;
+  float: left;
+  position: fixed;
+  left: 1.875rem;
+  top: .9rem;
+  overflow-y: scroll;
+}
+.view-main .view-right li{
+  float: left;
+  padding: .2rem;
+}
+.view-right ul{
+  padding-left: .2rem;
+}
+.view-main .view-left ul li{
+  height: .8rem; 
+  line-height: .8rem; 
+  text-align: center;
+}

@@ -1,0 +1,5 @@
+任务：实现 我的，列表页面，详情
+
+接口地址：https://www.juhe.cn/docs/api/id/46
+
+图标来源：https://m.meishij.net/
